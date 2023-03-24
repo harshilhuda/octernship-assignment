@@ -2,6 +2,7 @@ import './Screen2.scss'
 import Card from '../Card/Card'
 import {toast} from 'react-toastify'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 function Screen2() {
     const str = localStorage.getItem('string')
     const str1=localStorage.getItem('string1')
@@ -53,6 +54,9 @@ function Screen2() {
                         <Card key={index} c={c} removeChars={removeChars} index={index} />
                     ))
                 }
+            </div>
+            <div className="goback">
+                <h2><Link className='link' to='/'>Go Back to screen 1</Link></h2>
             </div>
         </div>
     )
