@@ -1,0 +1,28 @@
+.screen1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    .inp{
+        font-size: 20px;
+        height: 40px;
+        width: 500px;
+        border-radius: 10px;
+        // border-color: ;  
+    }
+    .btn{
+        font-size: 20px;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #5448C8;
+        color: white;
+    }
+    .btn:hover{
+        transform: scale(0.98);
+    }
+}

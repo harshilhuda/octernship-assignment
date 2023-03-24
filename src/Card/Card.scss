@@ -1,0 +1,14 @@
+.card{
+    width: 150px;
+    height: 150px;
+    // background-color: #FFFECB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn{
+        margin-left: 80%;
+        cursor: pointer;
+        color: red;
+    }
+}
