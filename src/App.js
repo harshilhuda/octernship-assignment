@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css'
 import Screen1 from './Screen1/Screen1';
