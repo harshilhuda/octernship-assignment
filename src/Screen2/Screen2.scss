@@ -6,7 +6,10 @@
     .cards{
         display: flex;
         gap: 5px;
-        margin: 20px 400px;
+        margin: 20px 200px;
         flex-wrap: wrap;
+    }
+    .link{
+        color: blue;
     }
 }

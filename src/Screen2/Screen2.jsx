@@ -2,7 +2,9 @@ import './Screen2.scss'
 import Card from '../Card/Card'
 import {toast} from 'react-toastify'
 import { useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 function Screen2() {
+    const navigate=useNavigate()
     const str = localStorage.getItem('string')
     const str1=localStorage.getItem('string1')
     // let count=Array(26).fill(0)
@@ -29,7 +31,8 @@ function Screen2() {
             ))
             console.log(ls);
             localStorage.setItem('string',JSON.stringify(ls.join("")))
-            window.location.reload()
+            // window.location.reload()
+            navigate('/screen2')
     }
     useEffect(()=>{
         if(unique(ls)===true)
@@ -53,6 +56,9 @@ function Screen2() {
                         <Card key={index} c={c} removeChars={removeChars} index={index} />
                     ))
                 }
+            </div>
+            <div className="goback">
+                <h2><Link className='link' to='/'>Go Back to screen 1</Link></h2>
             </div>
         </div>
     )
