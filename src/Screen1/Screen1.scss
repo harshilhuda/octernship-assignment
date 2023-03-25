@@ -11,6 +11,8 @@
         height: 40px;
         width: 500px;
         border-radius: 10px;
+        // width: 100%;
+        // flex-wrap: wrap;
         // border-color: ;  
     }
     .btn{
@@ -24,5 +26,10 @@
     }
     .btn:hover{
         transform: scale(0.98);
+    }
+    @media only screen and (max-width:768px) {
+        .inp{
+            width: 300px;
+        }
     }
 }
